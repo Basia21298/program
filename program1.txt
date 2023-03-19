@@ -1,1 +1,48 @@
-Hello, World!
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+
+using namespace std;
+
+int wybor;
+float a;
+float b;
+
+int main (void)
+{
+  while (1) 
+  {
+    cout <<"----------------------------------"<< endl;
+    cout <<"|  Witaj w prostym kalkulatorze  |"<< endl;
+    cout <<"----------------------------------"<< endl;
+
+    cout << "Prosze wybrac dzialanie z ponizszych opcji:" << endl;
+        cout << "[1] Dodawanie" << endl, 
+        cout << "[2] Odejmowanie" << endl, 
+        cout << "[9] Wyjscie z programu" << endl;
+        cin >> wybor;
+
+    switch (wybor) {
+   
+       case 1:
+       cout <<"Wybrano [1] Dodawanie"<<endl;
+       cout <<"Wprowadz liczbę a"<<endl;
+       cin >> a;
+       cout <<"Wprowadz liczę b"<<endl;
+       cin>> b;
+       cout <<"Wynik dodawania "<< a << " + " << b << " = " << a+b <<endl;
+       break;
+
+       case 2:
+       cout <<"Wybrano [2] Odejmowanie"<<endl;
+       cout <<"Wprowadz liczbę a"<<endl;
+       cin >> a;
+       cout <<"Wprowadz liczę b"<<endl;
+       cin>> b;
+       cout <<"Wynik odejmowania "<< a << " - " << b << " = " << a-b <<endl;
+       break;
+    }
+
+  }
+return 0;
+}

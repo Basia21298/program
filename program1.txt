@@ -19,6 +19,7 @@ int main (void)
     cout << "Prosze wybrac dzialanie z ponizszych opcji:" << endl;
         cout << "[1] Dodawanie" << endl, 
         cout << "[2] Odejmowanie" << endl, 
+        cout << "[3] Dzielenie" << endl, 
         cout << "[9] Wyjscie z programu" << endl;
         cin >> wybor;
 
@@ -40,6 +41,15 @@ int main (void)
        cout <<"Wprowadz liczę b"<<endl;
        cin>> b;
        cout <<"Wynik odejmowania "<< a << " - " << b << " = " << a-b <<endl;
+       break;
+
+       case 3:
+       cout <<"Wybrano [3] Dzielenie"<<endl;
+       cout <<"Wprowadz liczbę a"<<endl;
+       cin >> a;
+       cout <<"Wprowadz liczę b"<<endl;
+       cin>> b;
+       cout <<"Wynik dzielenia " << a << " / " << b << " = " << a/b <<endl;
        break;
     }
 
